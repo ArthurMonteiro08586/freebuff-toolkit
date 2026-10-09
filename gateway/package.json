@@ -1,0 +1,15 @@
+{
+  "name": "freebuff2api",
+  "version": "1.9.1",
+  "type": "module",
+  "private": true,
+  "description": "FreeBuff2API OpenAI and Anthropic compatible gateway for Node.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check local-proxy.js && node --check management-api.js && node --check worker.js && node --check scripts/build-freebuff-models-json.mjs && node --check scripts/test-model-status.mjs && node --check scripts/test-upstream-compat.mjs && node --check scripts/test-local-proxy.mjs && node --check scripts/test-management-api.mjs",
+    "test": "npm run check && node scripts/test-model-status.mjs && node scripts/test-upstream-compat.mjs && node scripts/test-local-proxy.mjs && node scripts/test-management-api.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

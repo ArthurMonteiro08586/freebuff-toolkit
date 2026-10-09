@@ -1,0 +1,8 @@
+[
+  {
+    "login": "gh-username",
+    "email": "user@example.com",
+    "password": "gh-password",
+    "totp": "JBSWY3DPEHPK3PXP"
+  }
+]
